@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to our professional website. Explore our services, portfolio, and contact information." />
+  <title>Welcome | Your Company Name</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #0a74da;
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 5rem 1rem;
+      background: linear-gradient(to right, #0a74da, #1e90ff);
+      color: #fff;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .hero a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: #0a74da;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .hero a:hover {
+      background: #e6f0ff;
+    }
+
+    /* Main Content */
+    main {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    main h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #0a74da;
+    }
+    main p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Company Name</h1>
+    <p>Professional • Reliable • Innovative</p>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Our Website</h2>
+    <p>We’re dedicated to delivering high-quality solutions that empower your business to grow and succeed.</p>
+    <a href="#about">Learn More</a>
+  </section>
+
+  <main id="about">
+    <h3>About Us</h3>
+    <p>At <strong>Your Company Name</strong>, we combine expertise, creativity, and technology to bring your ideas to life. Whether you’re looking for web development, design, or consulting services, we’re here to help you every step of the way.</p>
+    <p>Explore our services and discover how we can make a difference together.</p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Company Name. All Rights Reserved.</p>
+    <p><a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a></p>
+  </footer>
+
+  <script>
+    // Automatically set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
